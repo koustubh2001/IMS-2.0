@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ims-registration-otp-page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, #ffffff 35%, #566b94 93%);
+  overflow: hidden;
+}
+
+.ims-registration-otp-container {
+  width: 100%;
+  max-width: 1720px;
+  height: 100vh;
+  max-height: 1080px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.ims-registration-left-side-content {
+  flex: 1.15;
+  height: 100%;
+  padding: clamp(24px, 4vh, 48px) clamp(30px, 4vw, 80px) clamp(20px, 3vh, 40px)
+    clamp(40px, 5vw, 100px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ims-registration-left-inner-wrapper {
+  width: 100%;
+  max-width: 760px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Logo and Header */
+.ims-registration-logo-and-header-layout {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: clamp(12px, 2vh, 20px);
+}
+
+.ims-registration-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #176789;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ims-registration-logo-box img.ims-registration-header-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.ims-registration-header-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ims-registration-brand-title {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+
+.ims-registration-brand-tagline {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+/* Main Titles */
+.ims-registration-below-content-layout {
+  margin-bottom: clamp(10px, 1.5vh, 16px);
+}
+
+.ims-registration-main-title {
+  color: #ffffff;
+  font-size: clamp(28px, 2.3vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  margin-bottom: 10px;
+}
+
+.ims-registration-sub-description {
+  color: #ffffff;
+  font-size: clamp(12.5px, 0.9vw, 14.5px);
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 680px;
+  opacity: 0.92;
+}
+
+/* Hero image  */
+.ims-registration-illustration-wrapper {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0;
+}
+
+.ims-registration-main-illustration {
+  width: auto;
+  height: 500px;
+}
+
+/* Glassmorphic Card  */
+.ims-registration-under-content-card {
+  width: 100%;
+  max-width: 708px;
+  min-height: 68px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  gap: 14px;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.ims-registration-under-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #132a56;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.ims-registration-under-logo-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.ims-registration-under-text-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ims-registration-quote-text {
+  color: #132a56;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.ims-registration-authority-line {
+  font-size: 11.5px;
+  line-height: 16px;
+}
+
+.ims-registration-auth-bold {
+  color: #132a56;
+  font-weight: 700;
+}
+
+.ims-registration-auth-sep {
+  color: #777587;
+}
+
+.ims-registration-auth-light {
+  color: #777587;
+  font-weight: 400;
+}
+
+/* RIGHT SIDE */
+.ims-registration-right-side-layout {
+  flex: 0.95;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(20px, 3vh, 40px) 40px;
+}
+
+.ims-registration-right-inside-content {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ims-registration-right-header-content {
+  width: 100%;
+  margin-bottom: clamp(14px, 2.5vh, 24px);
+  text-align: left;
+}
+
+.ims-registration-otp-heading {
+  color: #132a56;
+  font-size: clamp(26px, 2vw, 32px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.32px;
+  margin-bottom: 8px;
+}
+
+.ims-registration-otp-subheading {
+  color: #777587;
+  font-size: clamp(13.5px, 0.9vw, 15.5px);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+/* 6 OTP Boxes: */
+.ims-registration-code-box-main-layout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(10px, 1.2vw, 24px);
+  margin-bottom: clamp(14px, 2vh, 20px);
+}
+
+.ims-registration-otp-digit-box {
+  flex: 1;
+  max-width: 76px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 12px;
+  padding: 6px;
+  background: #ffffff;
+  border: 2px solid rgba(19, 42, 86, 0.4);
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 700;
+  color: #132a56;
+  text-align: center;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ims-registration-otp-digit-box:focus {
+  border-color: #176789;
+  box-shadow: 0px 0px 0px 3px rgba(23, 103, 137, 0.15);
+}
+
+/* Verify Identity Button */
+.ims-registration-btn-verify-identity {
+  width: 100%;
+  height: clamp(44px, 5vh, 48px);
+  border-radius: 8px;
+  background: #132a56;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.ims-registration-btn-verify-identity:hover {
+  background-color: #0c1b37;
+}
+
+.ims-registration-btn-verify-identity:active {
+  transform: translateY(1px);
+}
+
+/* Resend & Timer */
+.ims-registration-resend-content-layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: clamp(14px, 2.5vh, 22px);
+}
+
+.ims-registration-resend-label {
+  color: #111112;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ims-registration-resend-btn {
+  background: none;
+  border: none;
+  color: #777587;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ims-registration-resend-btn:disabled {
+  cursor: default;
+}
+
+.ims-registration-timer-text {
+  color: #777587;
+  font-weight: 600;
+}
+
+/* Footer Action Links */
+.ims-registration-footer-action-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: clamp(14px, 2.5vh, 22px);
+}
+
+.ims-registration-back-options-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #132a56;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.ims-registration-back-options-link:hover {
+  text-decoration: underline;
+}
+
+.ims-registration-back-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.ims-registration-support-link {
+  color: #333334;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.ims-registration-support-link:hover {
+  color: #132a56;
+}
