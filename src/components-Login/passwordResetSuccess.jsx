@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import "./PasswordResetSuccess.css";
 
-import logoImg from "../assets/Auth/logo.png";
-import heroIllustration from "../assets/Auth/passwordresetsuccess-hero-illustration.png";
-import checkIconImg from "../assets/Auth/white-check-icon.png";
-import lockIconImg from "../assets/Auth/lock-icon.png";
-import securityCardIconImg from "../assets/Auth/shield-icon.png";
+import logoImg from "../assets/Login/logo.png";
+import heroIllustration from "../assets/Login/passwordresetsuccess-hero-illustration.png";
+import checkIconImg from "../assets/Login/white-check-icon.png";
+import lockIconImg from "../assets/Login/lock-icon.png";
+import securityCardIconImg from "../assets/Login/shield-icon.png";
 
 export const PasswordResetSuccess = ({ onBackToLogin }) => {
   const containerRef = useRef(null);

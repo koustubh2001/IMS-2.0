@@ -1,11 +1,11 @@
 import {createBrowserRouter,RouterProvider,Navigate,} from "react-router-dom";
 import "./App.css";
 
-import { RegistrationOTP } from "./components-Auth/RegistrationOTP";
-import { PasswordResetSuccess } from "./components-Auth/passwordResetSuccess";
-import { ResetPassword } from "./components-Auth/resetpassword";
-import { Login } from "./components-Auth/Login";
-import { ForgotPassword } from "./components-Auth/ForgotPassword";
+import { RegistrationOTP } from "./components-Login/RegistrationOTP";
+import { PasswordResetSuccess } from "./components-Login/passwordResetSuccess";
+import { ResetPassword } from "./components-Login/resetpassword";
+import { Login } from "./components-Login/Login";
+import { ForgotPassword } from "./components-Login/ForgotPassword";
 
 const router = createBrowserRouter([
   {

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './ForgotPassword.css';
 
-import logoIcon from '../assets/Auth/logo.png';
-import shieldBadge from '../assets/Auth/shield-icon.png';
-import topIcon from '../assets/Auth/top-icon.png';
-import recoveryIllustration from '../assets/Auth/recovery-illustration.png';
-import emailIcon from '../assets/Auth/email-icon.png';
-import smsIcon from '../assets/Auth/password-icon.png';
+import logoIcon from '../assets/Login/logo.png';
+import shieldBadge from '../assets/Login/shield-icon.png';
+import topIcon from '../assets/Login/top-icon.png';
+import recoveryIllustration from '../assets/Login/recovery-illustration.png';
+import emailIcon from '../assets/Login/email-icon.png';
+import smsIcon from '../assets/Login/password-icon.png';
 
 export function ForgotPassword() {
   const [selectedMethod, setSelectedMethod] = useState('sms');
