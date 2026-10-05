@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./RegistrationOTP.css";
 
-import LOGO_IMG from "../assets/logo.png";
+import LOGO_IMG from "../assets/Auth/logo.png";
 import ILLUSTRATION_IMG from "../assets/Auth/registration-illustration.png";
-import SHIELD_ICON from "../assets/shield-icon.png";
+import SHIELD_ICON from "../assets/Auth/shield-icon.png";
 import BACK_ICON from "../assets/Auth/registration-back-icon.png";
 
 const OTP_INPUT_IDS = ["first", "second", "third", "fourth", "fifth", "sixth"];

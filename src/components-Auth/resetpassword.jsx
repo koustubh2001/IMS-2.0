@@ -7,8 +7,8 @@ import lockIcon from "../assets/Auth/lock-icon.png";
 import shieldIcon from "../assets/Auth/resetpassword-protest-icon.png";
 import checkIcon from "../assets/Auth/passwordresetsuccess-check-icon.png";
 
-import logoIcon from "../assets/logo.png";
-import complianceIcon from "../assets/shield-icon.png";
+import logoIcon from "../assets/Auth/logo.png";
+import complianceIcon from "../assets/Auth/shield-icon.png";
 
 export const ResetPassword = () => {
   const [newPassword, setNewPassword] = useState("");
