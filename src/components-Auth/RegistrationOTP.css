@@ -127,7 +127,10 @@
 
 .ims-registration-main-illustration {
   width: auto;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
+  max-height: clamp(280px, 45vh, 520px);
+  object-fit: contain;
 }
 
 /* Glassmorphic Card  */

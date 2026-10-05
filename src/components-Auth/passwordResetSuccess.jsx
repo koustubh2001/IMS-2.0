@@ -3,7 +3,7 @@ import "./PasswordResetSuccess.css";
 
 import logoImg from "../assets/logo.png";
 import heroIllustration from "../assets/Auth/passwordresetsuccess-hero-illustration.png";
-import checkIconImg from "../assets/Auth/passwordresetsuccess-check-icon.png";
+import checkIconImg from "../assets/Auth/white-check-icon.png";
 import lockIconImg from "../assets/Auth/lock-icon.png";
 import securityCardIconImg from "../assets/shield-icon.png";
 
