@@ -4,8 +4,13 @@ import "./App.css";
 import { RegistrationOTP } from "./components-Auth/RegistrationOTP";
 import { PasswordResetSuccess } from "./components-Auth/passwordResetSuccess";
 import { ResetPassword } from "./components-Auth/resetpassword";
+import { Login } from "./components-Auth/Login";
 
 const router = createBrowserRouter([
+  {
+    path:"/login",
+    element:<Login/>
+  },
   {
     path: "/",
     element: <RegistrationOTP />,
