@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./resetpassword.css";
 
 import leftIllustration from "../assets/Login/resetpassword-left-illustration.png";
@@ -225,9 +226,9 @@ export const ResetPassword = () => {
 
           {/* Back to Login */}
           <div className="ims-reset-password-login-footer">
-            <a href="#login" className="ims-reset-password-back-link">
+            <Link to="/login" className="ims-reset-password-back-link">
               Back to Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>

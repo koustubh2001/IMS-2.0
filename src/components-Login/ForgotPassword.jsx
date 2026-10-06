@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ForgotPassword.css';
 
 import logoIcon from '../assets/Login/logo.png';
@@ -9,6 +10,7 @@ import emailIcon from '../assets/Login/email-icon.png';
 import smsIcon from '../assets/Login/password-icon.png';
 
 export function ForgotPassword() {
+  const navigate = useNavigate();
   const [selectedMethod, setSelectedMethod] = useState('sms');
 
   return (
@@ -16,11 +18,12 @@ export function ForgotPassword() {
       <div className="ims-forgot-left">
         <div>
           <div className="ims-forgot-brand-header">
-            <img
-              src={logoIcon}
-              alt="Internship Management System Logo"
-              className="ims-forgot-brand-logo"
-            />
+            <div className="ims-forgot-brand-logo-icon">
+              <img
+                src={logoIcon}
+                alt="Internship Management System Logo"
+              />
+            </div>
             <div className="ims-forgot-brand-text-block">
               <span className="ims-forgot-brand-title">Internship Management System</span>
               <span className="ims-forgot-brand-subtitle">Learn • Grow • Build Your Future</span>
@@ -132,7 +135,7 @@ export function ForgotPassword() {
             Send Verification Code &rarr;
           </button>
 
-          <div className="ims-forgot-back-to-login">
+          <div className="ims-forgot-back-to-login" onClick={() => navigate('/login')}>
             &#8249; Back to Login
           </div>
         </div>

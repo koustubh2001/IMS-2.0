@@ -169,7 +169,6 @@
   display: block;
   object-fit: contain;
   object-position: bottom center;
-  mix-blend-mode: darken;
 }
 
 

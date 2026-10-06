@@ -1,4 +1,4 @@
-import {createBrowserRouter,RouterProvider,Navigate,} from "react-router-dom";
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import "./App.css";
 
 import { RegistrationOTP } from "./components-Login/RegistrationOTP";

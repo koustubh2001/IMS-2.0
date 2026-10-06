@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./PasswordResetSuccess.css";
 
 import logoImg from "../assets/Login/logo.png";
@@ -9,12 +10,13 @@ import securityCardIconImg from "../assets/Login/shield-icon.png";
 
 export const PasswordResetSuccess = ({ onBackToLogin }) => {
   const containerRef = useRef(null);
+  const navigate = useNavigate();
 
   const handleBackToLogin = () => {
     if (onBackToLogin) {
       onBackToLogin();
     } else {
-      console.log("Navigate to Login");
+      navigate("/login");
     }
   };
 

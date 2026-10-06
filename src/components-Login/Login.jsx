@@ -10,9 +10,11 @@ import LoginEyeIcon from '../assets/Login/password-eye-open.png'
 import LoginSigninArrow from '../assets/Login/signin-icon.png'
 import LoginGoogleIcon from '../assets/Login/google-icon.png'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Login = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
@@ -22,6 +24,7 @@ export const Login = () => {
   const validateEmail = (value) => {
     const trimmed = value.trim()
     if (!trimmed) return 'Please enter your email address'
+    if (/[A-Z]/.test(trimmed)) return 'Email must not contain uppercase letters'
     if (!trimmed.includes('@')) return 'Email must contain @'
     const parts = trimmed.split('@')
     if (parts.length !== 2 || !parts[0]) return 'Enter a valid email address'
@@ -33,6 +36,10 @@ export const Login = () => {
   const validatePassword = (value) => {
     if (!value) return 'Please enter your password'
     if (value.length < 8) return 'Password must be at least 8 characters'
+    if (!/[A-Z]/.test(value)) return 'Password must contain at least one uppercase letter'
+    if (!/[a-z]/.test(value)) return 'Password must contain at least one lowercase letter'
+    if (!/\d/.test(value)) return 'Password must contain at least one number'
+    if (!/[^A-Za-z0-9]/.test(value)) return 'Password must contain at least one symbol'
     return ''
   }
 
@@ -181,7 +188,7 @@ export const Login = () => {
               <div className="ims-login-input-group ims-login-input-group-password">
                 <div className="ims-login-label-row">
                   <label htmlFor="ims-login-password">Password</label>
-                  <a href="#" className="ims-login-forgot">Forgot Password?</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); navigate('/forgot-password'); }} className="ims-login-forgot">Forgot Password?</a>
                 </div>
 
                 <div className={`ims-login-input-wrapper ${passwordError ? 'ims-login-input-error' : ''}`}>
